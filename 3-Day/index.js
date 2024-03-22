@@ -1,3 +1,5 @@
+//----------------------DAY 3 TASK---------------------------------------------------------//
+
 // 1. How To compare Two JSON have the same properties without order ? -----------------------------//
 let obj1={name:"Person1",age:5}
 let obj2={age:5,name:"Person1"}
