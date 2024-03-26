@@ -9,7 +9,7 @@ var ananymousFunction=function(datas){
   for(var i=0;i<datas.length;i++){
     //Checking for Odd number 
       if(datas[i]%2==1){
-         console.log(datas[i])
+         console.log("Anonymous function :",datas[i])
       }
   }
 }
@@ -19,7 +19,7 @@ ananymousFunction(a_question);
 (function () {
   for(var i=0;i<a_question.length;i++) {
       if(a_question[i]%2==1) {
-         console.log(a_question[i])
+         console.log( "IIFE :", a_question[i])
       }
   }
 })();
@@ -35,7 +35,7 @@ var title_Cap=function(){
     // Here it will return the Each element First index into Capital
       return res[0].toUpperCase() + res.substring(1).toLowerCase()
   })
-  console.log(changedData)
+  console.log("Anonymous Function :",changedData)
 }
 
 title_Cap();
@@ -46,7 +46,7 @@ title_Cap();
     // Here it will return the Each element First index into Capital
     return res[0].toUpperCase() + res.substring(1).toLowerCase()
 })
-console.log(changedData)
+console.log("IIFE :",changedData)
 })();
 
 //-----------------------------------------------------------------------------------------------------
@@ -60,7 +60,7 @@ var sum=function(){
   for(var i=0;i<c_question.length;i++){
     ans+=c_question[i]
   }
-  console.log(ans)
+  console.log( "Anonymous Function :",ans)
 }
 
 sum();
@@ -72,7 +72,7 @@ sum();
   for(var i=0;i<c_question.length;i++){
     ans+=c_question[i]
   }
-  console.log(ans)
+  console.log("IIFE :",ans)
 
 })();
 
@@ -105,7 +105,7 @@ var prime_Num=function() {
   return prime_data
 }
   var prime_Num=prime_Num();
- console.log(prime_Num);
+ console.log("Anonymous Function :",prime_Num);
 
  // By IIFE (Imediate invoke function)------------------------------------------
 var prime=(function() {
@@ -132,6 +132,63 @@ var prime=(function() {
   return prime_data 
 
 })();
-console.log(prime)
+console.log("IIFE :",prime)
 
 //--------------------------------------------------------------------------------------------------------
+
+// E.Return all the palindromes in an array By Anonymous function-----------------------------------------
+var e_question=["sos","java","nitin"]
+
+var palindrome_Anonymous=function(){
+  var palindrome="" // variable for capture Individual Palidromes
+  var palindrome_array=[] //Array to club the Individual Palindromes
+
+  for(var i=0;i<e_question.length;i++){
+    //Each outer Loop we need to refresh the variable to store new element
+    palindrome=""
+        // Reverse each element in an array to Identify Palindrome
+        for(var j=e_question[i].length-1; j>=0;j--){
+          palindrome+=e_question[i][j]
+         
+        }
+        //Verify the normal element and reversed element are same
+        if(palindrome==e_question[i]){
+            palindrome_array.push(e_question[i])
+        }
+
+  }
+  return palindrome_array
+}
+console.log("Anonymous function :",palindrome_Anonymous());
+
+
+ // By IIFE (Imediate invoke function)------------------------------------------
+
+
+var IIFE_palindrome=(function(){
+  var palindrome="" // variable for capture Individual Palidromes
+  var palindrome_array=[] //Array to club the Individual Palindromes
+
+  for(var i=0;i<e_question.length;i++){
+    //Each outer Loop we need to refresh the variable to store new element
+    palindrome=""
+        // Reverse each element in an array to Identify Palindrome
+        for(var j=e_question[i].length-1; j>=0;j--){
+          palindrome+=e_question[i][j]
+         
+        }
+        //Verify the normal element and reversed element are same
+        if(palindrome==e_question[i]){
+            palindrome_array.push(e_question[i])
+        }
+
+  }
+  return palindrome_array
+})();
+console.log("IIFE :",IIFE_palindrome)
+
+//-------------------------------------------------------------------------------------------------------------------
+
+//-----F.Return median of two sorted arrays of the same size---------------------------------------------
+
+//----------ANONYMOUS FUNCTION----------------------------------
