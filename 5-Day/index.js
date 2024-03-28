@@ -63,14 +63,14 @@ Http.onload=function(){
 
 
 
-
-
-
-
-
-
+    }else{
+        alert('error')
     }
+
+
 }
+
+
 Http.send()
 
 
