@@ -1,0 +1,70 @@
+{
+    "personal":{
+        "name":"vignesh",
+        "age":"23",
+        "address":"106 pachaiyappan street",
+        "district":"chennai",
+        "state":"TamilNadu",
+        "contact":{
+            "phone":"8825559375",
+            "email":"vigneshvickybsc1999@gmail.com"
+        }
+    },
+    "education":[{
+          "institution":"Alpha arts and science college",
+          "course":"Bsc computerscience",
+          "start_date":"6/6/22016",
+          "end_date":"6/6/2019",
+          "percentage":"65%"
+
+    },{
+        "institution":"Govt hr sec school",
+          "course":"HSC",
+          "start_date":"6/6/22014",
+          "end_date":"6/6/2016",
+          "percentage":"75%"
+
+    }],
+    "skills":[{
+          "front_end":{
+             "language":["Html","Css","Javascript"],
+             "framework":["ReactJS","Bootstrap"],
+             "tools":["vs code","gitHub"],
+             "designs":["Photoshop","illustrator","canva"]
+             
+          },
+          "Back-end":{
+            "language":["Javascript","Typescript"],
+             "framework":["ExpressJS","NodeJS"],
+             "tools":["vs code","gitHub"],
+             "database":["Sql","MongoDB"]
+
+          }
+    }],
+    "work":{
+
+         "name":"Indium software",
+         "position":"Test engineer",
+         "start_date":"2/2/2023",
+         "end_date":"2/2/2024"
+
+    },
+    "certification":[{
+         "name":"Testing",
+         "start_date":"2/3/2023",
+         "end_date":"2/6/2023",
+         "issuer":"Qspider"
+    },{
+        "name":"MERN stack",
+        "start_date":"2/3/2024",
+        "end_date":"NULL",
+        "issuer":"GUVI"
+         
+
+    }]
+
+
+
+
+
+}
