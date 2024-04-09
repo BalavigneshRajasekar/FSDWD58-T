@@ -1,0 +1,17 @@
+.container{
+    background-color: aqua;
+}
+main{
+    background-color: blue;
+    height: 200px;
+}
+aside{
+    background-color: brown;
+    height: 200px;
+}
+nav{
+    background-color: bisque;
+}
+footer{
+    background-color: yellow;
+}

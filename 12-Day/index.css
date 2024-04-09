@@ -1,0 +1,167 @@
+.container-fluid{
+    background-color: #cad2c5;
+}
+header{
+    background-color:#2f3d46;
+    color:#fdffff;
+    height: 60px;
+}
+.main-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+   gap: 50px;
+    grid-template-areas: "header header header" "sec1 sec2 sec2";
+   
+   
+}
+header{
+    grid-area: header;
+    text-align: center;
+    align-content: center;
+}
+header i{
+   position: relative;
+   right: 45%;
+   font-size: 30px;
+}
+
+.sec1{
+    grid-area: sec1;
+    width: 300px;
+    height: 450px;
+    background-color:#353535;
+    border-radius: 20px;
+    margin-left: 50px;
+}
+.sec2{
+    grid-area: sec2;
+    height: 400px;
+    margin-right: 60px;
+    
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "div1 div1 div1" " div2 div3 div4" "div5 div5 div5";
+    gap: 40px;
+}
+.div1{
+    height: 40px;
+    background-color: #353535;
+    
+    margin-left:5vw;
+    margin-right: 5vw;
+    grid-area: div1;
+    border-radius: 10px;
+   
+
+}
+.div1 p{
+    color:#9c9c9c;
+    text-align: left;
+    height: 100%;
+    align-content: center;
+    margin-left: 20px;
+   
+   
+
+}
+.div2{
+    background-color: #353535;
+    grid-area: div2;
+    height: 150px;
+    border-radius: 10px;
+}
+.div3{
+    background-color: #353535;
+    grid-area: div3;
+    height: 150px;
+    border-radius: 10px;
+}
+.div4{
+    background-color: #353535;
+grid-area: div4;
+height: 150px;
+border-radius: 10px;
+}
+.div5{
+    height: 150px;
+    background-color: #353535;
+    grid-area: div5;
+    border-radius: 10px;
+
+}
+
+
+@media(max-width:576px){
+
+    .main-div{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+        
+       gap: 30px;
+        grid-template-areas: "header " "sec2 " "sec1";
+       
+       
+    }
+
+header{
+    grid-area: header;
+}
+header i{
+    position: relative;
+    right: 35%;
+    font-size: 30px;
+ }
+    .sec2{
+        grid-area: sec2;
+    height: 400px;
+    margin-right: 0px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "div1 div1" " div2  div3" " div4" "div5";
+    gap: 10px;
+    }
+    .sec1{
+        grid-area: sec1;
+       width: 100%;
+        height: 450px;
+        background-color:#353535;
+        border-radius: 20px;
+        margin-left: 0px;
+    }
+
+    .div1 p{
+        color:#9c9c9c;
+        text-align: left;
+        height: 100%;
+        align-content: center;
+        text-align: center;
+       
+       
+    
+    }
+    .div1{
+        height: 40px;
+    background-color: #353535;
+    
+    margin-left:5vw;
+    margin-right: 5vw;
+    grid-area: div1;
+    border-radius: 10px;
+       
+    
+    }
+    .div2{
+        background-color: #353535;
+        grid-area: div2;
+       
+        height: 150px;
+        border-radius: 10px;
+    }
+
+}
