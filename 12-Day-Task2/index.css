@@ -23,10 +23,12 @@ main{
     height: 120px;
     background-color: aqua;
     border-radius: 50%;
+    border: 1px solid black;
     
 }
 .div1 div{
-    background-color:black ;
+   
+    border: 1px solid black;
     width: 180px;
     height: 200px;
 }
@@ -147,13 +149,14 @@ margin-top: 30px;
             height: 120px;
             border: 1px solid black;
             border-radius: 50%;
+            border: 1px solid black;
             
         }
         .div1 div{
             margin-top: 20px;
             margin-left: 20vw;
             justify-content:center ;
-            background-color:black ;
+            border:1px solid black;
             width: 180px;
             height: 200px;
         }
