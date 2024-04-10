@@ -1,0 +1,161 @@
+
+main{
+    width: 90vw;
+    border: 2px solid black;
+    text-align: center;
+    padding: 60px;
+    margin-left: 5vw;
+    height: 100vh;
+}
+.containe{
+    
+    border: 1px solid black;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around ;
+    height: 70vh;
+    padding: 30px;
+}
+.div1 div img{
+    margin-top: 35px;
+    width: 100px;
+    height: 120px;
+    background-color: aqua;
+    border-radius: 50%;
+    
+}
+.div1 div{
+    background-color:black ;
+    width: 180px;
+    height: 200px;
+}
+.div2{
+    
+    text-align: end;  
+}
+input{
+    width: 27vw; 
+    
+}
+#btn1{
+width: 12vw;
+margin-top: 20px;
+margin-right: 5vw;
+}
+#btn2{
+width: 12vw;
+margin-top: 20px;
+margin-right: 12vw;
+
+}
+
+#username{
+    margin-right: 10vw;
+}
+#email{
+    margin-right: 10vw;
+    margin-top: 10px;
+}
+#number{
+    margin-right: 10vw;
+    margin-top: 10px;
+}
+#select{
+    margin-right: 32vw;
+    text-align: center;
+    margin-top: 10px;
+    width: 5vw;
+}
+
+#attende{
+    margin-right: 10vw;
+    margin-top: 10px;
+}
+
+@media(max-width:576px){
+
+    main{
+        width: 90vw;
+        border: 2px solid black;
+        text-align: center;
+        padding: 0px;
+        margin-left: 5vw;
+        height:100vh;
+    }
+    .containe{
+        
+        border: 1px solid black;
+        width: 100%;
+        display: block;
+        height: 80%;
+        align-items: center;
+        
+        padding: 0px;
+    }
+    .div2{
+width:100% ;
+text-align: end;
+margin-top: 30px;
+
+
+    }
+    input{
+        width: 45vw;
+    }
+    #btn1{
+        width: 20vw;
+        margin-top: 20px;
+        margin-right: 5vw;
+        }
+        #btn2{
+        width: 20vw;
+        margin-top: 20px;
+        margin-right: 21vw;
+        
+        }
+        
+        #username{
+            margin-top: 10px;
+            margin-right: 10vw;
+        }
+        #email{
+            margin-right: 10vw;
+            margin-top: 10px;
+        }
+        #number{
+            margin-right: 10vw;
+            margin-top: 10px;
+        }
+        #select{
+            margin-right: 32vw;
+            text-align: center;
+            margin-top: 10px;
+            width: 20vw;
+        }
+        
+        #attende{
+            margin-right: 12vw;
+            margin-top: 10px;
+            width: 30vw;
+        }
+
+
+        .div1 div img{
+            margin-top: 35px;
+            width: 100px;
+            height: 120px;
+            border: 1px solid black;
+            border-radius: 50%;
+            
+        }
+        .div1 div{
+            margin-top: 20px;
+            margin-left: 20vw;
+            justify-content:center ;
+            background-color:black ;
+            width: 180px;
+            height: 200px;
+        }
+
+}
