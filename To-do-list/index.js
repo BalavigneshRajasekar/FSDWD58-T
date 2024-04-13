@@ -15,6 +15,8 @@ child.innerHTML=`<input type="checkbox" > <strong class="overflow-hidden">${task
 main.appendChild(child)
 child.className="alert alert-warning alert-dismissible fade show d-flex justify-content-between gap-3" 
 
+input.value=""//After add the value reset It to empty
+input.focus() // Focus on the same Input
 
 }else{
     let alertDiv=document.getElementById('alert-div')
@@ -23,7 +25,7 @@ child.className="alert alert-warning alert-dismissible fade show d-flex justify-
     setTimeout(function(){
         alertDiv.classList.replace('show','d-none')
 
-    },5000)
+    },3000)
 
 }
 
