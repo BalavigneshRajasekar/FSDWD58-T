@@ -9,11 +9,11 @@ let task=input.value
 if(task){
 
 let child =document.createElement('li')
-child.innerHTML=`<input type="checkbox" > <strong class="overflow-hidden">${task}</strong><i class="bi bi-trash"></i>
+child.innerHTML=`<input type="checkbox" "> <strong class="overflow-hidden ">${task}</strong><i class="bi bi-trash"></i>
 
 `
 main.appendChild(child)
-child.className="alert alert-warning alert-dismissible fade show d-flex justify-content-between gap-3" 
+child.className="alert alert-warning alert-dismissible fade show d-flex justify-content-between gap-3 fs-5" 
 
 input.value=""//After add the value reset It to empty
 input.focus() // Focus on the same Input
@@ -42,7 +42,6 @@ if(e.target.tagName=="INPUT"){
       
     if(e.target.checked){
         e.target.nextElementSibling.style.textDecoration="line-through"
-        console.log(e.target.value)
         
     }else{
         e.target.nextElementSibling.style.textDecoration="none"
