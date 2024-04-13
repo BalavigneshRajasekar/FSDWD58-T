@@ -9,3 +9,10 @@ input[type=checkbox]{
 .bi-card-checklist{
     color: blueviolet;
 }
+
+@media (min-width:576px){
+   #Main{
+    width: 50%;
+ 
+   }
+}
