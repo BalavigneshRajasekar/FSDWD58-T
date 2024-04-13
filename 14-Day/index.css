@@ -1,0 +1,26 @@
+#child{
+   width: 40vw; 
+}
+
+
+#anime{
+    
+      width: 100%;
+      height: 2px;
+      background-color: rgb(195, 92, 92);
+      animation-name: alert;
+      border: none;
+      animation-duration: 5s;
+      border-bottom: 3px solid  rgb(195, 92, 92);
+      margin-top: -16px;
+      border-radius: 20px;
+}
+
+@keyframes alert {
+
+   
+        0% {width: 0%;}
+       
+             
+}
+

@@ -1,0 +1,8 @@
+input[type=checkbox]{
+    accent-color: green;
+    
+}
+.show{
+    display: block;
+}
+
