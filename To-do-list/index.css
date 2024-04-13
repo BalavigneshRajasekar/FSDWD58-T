@@ -1,4 +1,6 @@
-
+#Main{
+background-color: white;
+}
 input[type=checkbox]{
     accent-color: green;
     
@@ -8,7 +10,10 @@ input[type=checkbox]{
 }
 
 .bi-card-checklist{
+    
     color: blueviolet;
+    animation-name: Todo;
+    animation:Todo 10s infinite;
 }
 
 @media (min-width:576px){
@@ -16,4 +21,14 @@ input[type=checkbox]{
     width: 50%;
  
    }
+}
+
+@keyframes Todo {
+
+    0%{color: red;}
+    25%{color: aqua;}
+    50%{color: blue;}
+    75%{color: brown;}
+    100%{color: yellow;}
+    
 }
