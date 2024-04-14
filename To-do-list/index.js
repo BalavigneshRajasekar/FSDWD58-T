@@ -13,7 +13,7 @@ child.innerHTML=`<input type="checkbox" "> <strong class="overflow-hidden ">${ta
 
 `
 main.appendChild(child)
-child.className="alert alert-warning alert-dismissible fade show d-flex justify-content-between gap-3 fs-5" 
+child.className="alert alert-success alert-dismissible fade show d-flex justify-content-between gap-3 fs-5" 
 
 input.value=""//After add the value reset It to empty
 input.focus() // Focus on the same Input

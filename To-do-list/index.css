@@ -1,6 +1,4 @@
-#Main{
-background-color: white;
-}
+
 input[type=checkbox]{
     accent-color: green;
     
@@ -21,14 +19,32 @@ input[type=checkbox]{
     width: 50%;
  
    }
+
+   #Main1{
+    width: 50%;
+   }
 }
 
 @keyframes Todo {
 
     0%{color: red;}
-    25%{color: aqua;}
+    25%{color: rgb(54, 125, 3);}
     50%{color: blue;}
     75%{color: brown;}
-    100%{color: yellow;}
+    100%{color: rgb(168, 4, 157);}
+    
+}
+.bi-arrow-right-circle-fill{
+    font-size: 50px;
+}
+body{
+    background-image: url(assets/bg2.jpg);
+   background-position-x: center;
+   background-size: cover;
+   opacity: 0.9;
+}
+
+h1{
+    color: blueviolet;
     
 }
