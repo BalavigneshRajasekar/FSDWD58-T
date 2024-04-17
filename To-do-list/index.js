@@ -50,9 +50,10 @@ if(e.target.tagName=="INPUT"){
    
 }
 
-//If the clicked are is Icon
+//If the clicked area is a Icon
 else if(e.target.tagName=="I"){
-    main.removeChild(e.target.parentElement)  
+        main.removeChild(e.target.parentElement)  
+    
 }
 
 }

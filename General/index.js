@@ -1,9 +1,16 @@
-var data=[2,5,4,3,7,8,11]
+var data="1234034 4"
+var question=data.split(' ')
+var[a,b]=question
+var flag =0
+for(var i=0;i<=b;i++){
+   if(a.includes(i)){
+   flag++
+   }
+}
 
-(function () {
-    for(var i=0;i<data.length;i++){
-          if(data[i]%2==1){
-             console.log(data[i]);
-          }
-    }
-})();
+
+if(flag==(Number(b)+1)){
+ console.log('yes')
+}else{
+    console.log('no');
+}
