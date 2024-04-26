@@ -1,0 +1,10 @@
+input{
+    height: 60px;
+}
+.btn{
+   
+    height: 50px;
+}
+table tr:nth-of-type(odd){
+    background-color: rgb(231, 228, 228);
+}
