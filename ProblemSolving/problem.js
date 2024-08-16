@@ -1,27 +1,16 @@
-const question = ["codekata"];
-const quest1 = question[0].split("");
-let quest2 = [];
-let flag = 0;
-const vowels = ["a", "e", "i", "o", "u"];
-let ans = [];
+const question = ["5 2", "1 1 2 4 5"];
+const quest1 = question[0].split(" ");
+const quest2 = question[1].split(" ");
+let smallest = 100;
 
 for (let i = 0; i < quest1.length; i++) {
-  flag = 0;
-  for (let j = 0; j < vowels.length; j++) {
-    if (quest1[i] !== vowels[j]) {
-      flag++;
-    }
-  }
-  if (flag == vowels.length) {
-    quest2.push(quest1[i]);
+  if (smallest > quest1[i]) {
+    smallest = quest1[i];
   }
 }
 
-if (quest2.length > 0) {
-  for (let i = quest2.length - 1; i >= 0; i--) {
-    ans.push(quest2[i]);
-  }
-  console.log(ans.join(""));
+if (quest2.includes(smallest)) {
+  console.log(smallest);
 } else {
   console.log(-1);
 }
