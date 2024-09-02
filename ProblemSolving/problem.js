@@ -1,16 +1,18 @@
-const question = ["5 2", "1 1 2 4 5"];
-const quest1 = question[0].split(" ");
-const quest2 = question[1].split(" ");
-let smallest = 100;
+const question = ["5 1", "3 2 2 3"];
 
-for (let i = 0; i < quest1.length; i++) {
-  if (smallest > quest1[i]) {
-    smallest = quest1[i];
+const n = question[0].split(" ");
+const k = question[1].split(" ");
+let flag = 0;
+for (let i = 0; i < n.length; i++) {
+  for (let j = 0; j < k.length; j++) {
+    if (n[i] == k[j]) {
+      flag = j + 1;
+    }
   }
 }
 
-if (quest2.includes(smallest)) {
-  console.log(smallest);
+if (flag > 0) {
+  console.log(flag);
 } else {
-  console.log(-1);
+  console.log("-1");
 }
